@@ -1,0 +1,114 @@
+.transactions {
+  margin-top: 48px;
+  margin-bottom: 139px;
+}
+
+.transactions__wrapper {
+}
+
+.transactions__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.transactions__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.transactions__filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  min-width: 200px;
+  background: transparent;
+  color: $whiteColor;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 56px;
+  border: 1px solid $accentColor;
+  transition: 0.3s all;
+
+  &:hover {
+    color: $purpleLightColor;
+    border: 1px solid $purpleLightColor;
+  }
+
+  &:active {
+    color: $purpleDarkColor;
+    border: 1px solid $purpleDarkColor;
+  }
+
+  img {
+    margin-right: 13px;
+  }
+}
+
+.transactions__table {
+  display: block;
+  border-radius: 24px;
+  padding: 24px;
+  background: $blockBackground;
+  width: 100%;
+  width: 100%;
+}
+
+.transactions__table tbody {
+  display: flex;
+  flex-direction: column;
+}
+
+.transactions__table tbody tr {
+  font-family: $fontFamilySecond;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+.transactions__table tbody tr + tr {
+  padding-bottom: 16px;
+  border-bottom: 1px solid $white15Color;
+}
+
+.transactions__table tbody tr + tr + tr {
+  padding: 16px 0;
+  border-bottom: 1px solid $white15Color;
+}
+
+.transactions__table tbody tr th {
+  font-family: $fontFamily;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 26px;
+
+  img {
+    cursor: pointer;
+    margin-left: 8px;
+  }
+}
+
+.transactions__table tbody tr th,
+.transactions__table tbody tr td {
+  min-width: 160px;
+}
+
+.transactions__table tbody tr th:last-child,
+.transactions__table tbody tr td:last-child {
+  min-width: 90px;
+}

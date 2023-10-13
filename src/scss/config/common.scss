@@ -19,7 +19,6 @@
 
 .wrapper {
   position: relative;
-  // min-height: 100%;
   min-height: 100vh;
   overflow: hidden;
   display: grid;
@@ -32,6 +31,7 @@
 }
 
 .button {
+  display: block;
   padding: 16px;
   border-radius: 56px;
   background: $accentColor;

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/layout/head.html', { 'title': 'Insanity - Transactions' })
+
+<body class="body">
+  <div class="wrapper">
+    <aside class="menu">
+      <div class="menu__wrapper">
+        <img class="menu__logo" src="images/icons/logo.svg" alt="Logo.">
+        <nav class="menu__nav">
+          <a class="menu__link" href="index.html">
+            <img class="menu__link-icon" src="images/icons/qr-icon.svg" alt="Dashboard.">
+            <div class="menu__link-text">Dashboard</div>
+          </a>
+          <a class="menu__link --special" href="buy-bet.html">
+            <img class="menu__link-icon" src="images/icons/dollar-icon.svg" alt="Buy.">
+            <div class="menu__link-text">Buy $IBET</div>
+          </a>
+          <a class="menu__link --active" href="transactions.html">
+            <img class="menu__link-icon" src="images/icons/transaction-icon.svg" alt="Transactions.">
+            <div class="menu__link-text">Transactions</div>
+          </a>
+          <a class="menu__link" href="#">
+            <img class="menu__link-icon" src="images/icons/profile-icon.svg" alt="Profile.">
+            <div class="menu__link-text">Profile</div>
+          </a>
+        </nav>
+        <nav class="menu__nav-bottom">
+          <a class="menu__link-bottom" href="#">
+            <img class="menu__link-icon-bottom" src="images/icons/home.svg" alt="Home.">
+            <div class="menu__link-text-bottom">Home</div>
+          </a>
+          <a class="menu__link-bottom" href="#">
+            <img class="menu__link-icon-bottom" src="images/icons/whitepaper.svg" alt="Whitepaper.">
+            <div class="menu__link-text-bottom">Whitepaper</div>
+          </a>
+          <a class="menu__link-bottom" href="#">
+            <img class="menu__link-icon-bottom" src="images/icons/tg.svg" alt="Telegram.">
+            <div class="menu__link-text-bottom">Telegram</div>
+          </a>
+        </nav>
+      </div>
+    </aside>
+    <main class="main">
+      <div class="container">
+        <section class="transactions">
+          <div class="transactions__wrapper">
+            <div class="transactions__header">
+              <h1 class="transactions__title">Transactions</h1>
+              <button class="transactions__filter">
+                <img src="images/icons/filter.svg" alt="Filter.">
+                Filter
+              </button>
+            </div>
+            <table class="transactions__table">
+              <tr>
+                <th><img src="images/icons/chevron.svg">Date</th>
+                <th><img src="images/icons/chevron.svg">Local Time</th>
+                <th><img src="images/icons/chevron.svg">How Much $IBET</th>
+                <th><img src="images/icons/chevron.svg">In USD</th>
+                <th><img src="images/icons/chevron.svg">Bonus Amount</th>
+                <th><img src="images/icons/chevron.svg">Status</th>
+              </tr>
+              <tr>
+                <td>20.09.2023</td>
+                <td>15:27</td>
+                <td>13 $IBET</td>
+                <td>$999</td>
+                <td>3 $IBET</td>
+                <td>Pending</td>
+              </tr>
+              <tr>
+                <td>20.09.2023</td>
+                <td>15:27</td>
+                <td>13 $IBET</td>
+                <td>$999</td>
+                <td>3 $IBET</td>
+                <td>Pending</td>
+              </tr>
+              <tr>
+                <td>20.09.2023</td>
+                <td>15:27</td>
+                <td>13 $IBET</td>
+                <td>$999</td>
+                <td>3 $IBET</td>
+                <td>Pending</td>
+              </tr>
+              <tr>
+                <td>20.09.2023</td>
+                <td>15:27</td>
+                <td>13 $IBET</td>
+                <td>$999</td>
+                <td>3 $IBET</td>
+                <td>Pending</td>
+              </tr>
+              <tr>
+                <td>20.09.2023</td>
+                <td>15:27</td>
+                <td>13 $IBET</td>
+                <td>$999</td>
+                <td>3 $IBET</td>
+                <td>Pending</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+        <div class="banner">
+          <div class="banner__title">BUY $IBET NOW AND REAP REWARDS LATER</div>
+          <div class="banner__subtitle">
+            Pre-sale has started. Get involved now to get access to insane prices on $IBET
+          </div>
+          <img class="banner__img" src="images/cubes.png" srcset="images/cubes@2x.png 2x" alt="Decoration cubes.">
+        </div>
+      </div>
+    </main>
+  </div>
+
+  @@include('html/layout/script.html')
+</body>
+
+</html>

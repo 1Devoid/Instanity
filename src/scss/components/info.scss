@@ -1,0 +1,130 @@
+.info {
+  padding-top: 40px;
+}
+
+.info__top-block {
+  display: grid;
+  grid-template-columns: minmax(460px, 1fr) 344px;
+  gap: 40px;
+}
+
+.info__left-block {
+}
+
+.info__back {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: $whiteColor;
+  font-weight: 600;
+  line-height: 100%;
+  margin-bottom: 40px;
+
+  img {
+    margin-right: 12px;
+  }
+}
+
+.info__address {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 43px;
+}
+
+.info__block {
+  padding: 16px;
+  border-radius: 24px;
+  background: $blockBackground;
+}
+
+.info__block-title {
+  font-size: 16px;
+  line-height: 14px;
+  font-weight: 300;
+  color: $white50Color;
+  margin-bottom: 12px;
+}
+
+.info__block-text {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.info__block-copy {
+  padding: 16px;
+  background: transparent;
+  border-radius: 56px;
+  border: 1px solid $whiteColor;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $whiteColor;
+  min-width: 120px;
+  transition: 0.3s all;
+
+  &:hover {
+    color: $purpleLightColor;
+    border: 1px solid $purpleLightColor;
+  }
+
+  &:active {
+    color: $purpleDarkColor;
+    border: 1px solid $purpleDarkColor;
+  }
+}
+
+.info__quantity {
+  margin-bottom: 32px;
+}
+
+.info__conditions {
+  color: $purpleLightColor;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration-line: underline;
+}
+
+.info__right-block {
+}
+
+.info__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.info__time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 16px;
+  border-radius: 40px;
+  background: $white15Color;
+  padding: 10px;
+
+  span {
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.info__qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+}
+
+.info__qr-title {
+  font-size: 20px;
+  color: $white50Color;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+.info__qr-img {
+  margin-bottom: 35px;
+}
