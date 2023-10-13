@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/layout/head.html', { 'title': 'Insanity' })
+
+<body class="body">
+  <div class="wrapper">
+    <aside class="menu">
+      <div class="menu__wrapper">
+        <img class="menu__logo" src="images/icons/logo.svg" alt="Logo.">
+        <nav class="menu__nav">
+          <a class="menu__link --active" href="index.html">
+            <img class="menu__link-icon" src="images/icons/qr-icon.svg" alt="Dashboard.">
+            <div class="menu__link-text">Dashboard</div>
+          </a>
+          <a class="menu__link --special" href="buy-bet.html">
+            <img class="menu__link-icon" src="images/icons/dollar-icon.svg" alt="Buy.">
+            <div class="menu__link-text">Buy $IBET</div>
+          </a>
+          <a class="menu__link" href="#">
+            <img class="menu__link-icon" src="images/icons/transaction-icon.svg" alt="Transactions.">
+            <div class="menu__link-text">Transactions</div>
+          </a>
+          <a class="menu__link" href="#">
+            <img class="menu__link-icon" src="images/icons/profile-icon.svg" alt="Profile.">
+            <div class="menu__link-text">Profile</div>
+          </a>
+        </nav>
+        <nav class="menu__nav-bottom">
+          <a class="menu__link-bottom" href="#">
+            <img class="menu__link-icon-bottom" src="images/icons/home.svg" alt="Home.">
+            <div class="menu__link-text-bottom">Home</div>
+          </a>
+          <a class="menu__link-bottom" href="#">
+            <img class="menu__link-icon-bottom" src="images/icons/whitepaper.svg" alt="Whitepaper.">
+            <div class="menu__link-text-bottom">Whitepaper</div>
+          </a>
+          <a class="menu__link-bottom" href="#">
+            <img class="menu__link-icon-bottom" src="images/icons/tg.svg" alt="Telegram.">
+            <div class="menu__link-text-bottom">Telegram</div>
+          </a>
+        </nav>
+      </div>
+    </aside>
+    <main class="main">
+      <div class="container">
+        <div class="banner">
+          <div class="banner__title">BUY $IBET NOW AND REAP REWARDS LATER</div>
+          <div class="banner__subtitle">
+            Pre-sale has started. Get involved now to get access to insane prices on $IBET
+          </div>
+          <img class="banner__img" src="images/cubes.png" srcset="images/cubes@2x.png 2x" alt="Decoration cubes.">
+        </div>
+        <div class="balance">
+          <div class="balance__presale">
+            <div class="balance__presale-title">Presale will finish in:</div>
+            <div class="balance__presale-counter">14:43:23</div>
+            <button class="balance__presale-btn" type="button">ON SALE</button>
+            <div class="balance__left">
+              <div class="balance__left-title">TOKENS LEFT</div>
+              <div class="balance__left-wrapper">
+                <div class="balance__left-progressbar">
+                  <!-- To display % in the progressbar, you need to write a value 
+                  in the style attribute here -->
+                  <div class="balance__left-overlay" style="width: 62%;"></div>
+                </div>
+                <div class="balance__left-inner">
+                  <div class="balance__left-100">100%</div>
+                  <div class="balance__left-percent">
+                    <!-- To move progressbar, you need to write a value 
+                    in the style attribute and change the value
+                    in the block class="balance__left-value" -->
+                    <div class="balance__left-value" style="left: 62%;">62%</div>
+                  </div>
+                  <div class="balance__left-0">0%</div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="balance__btn button">Buy</a>
+          </div>
+          <div class="balance__metrics">
+            <div class="balance__metrics-wrapper">
+              <div class="balance__metrics-title">$IBET BALANCE</div>
+              <div class="balance__metrics-inner">
+                <div class="balance__metrics-value">999</div>
+                <div class="balance__metrics-right">
+                  <div class="balance__metrics-text">$IBET</div>
+                  <div class="balance__metrics__subtext">999 USDT</div>
+                </div>
+              </div>
+            </div>
+            <div class="balance__metrics-wrapper">
+              <div class="balance__metrics-title">USDT BALANCE</div>
+              <div class="balance__metrics-inner">
+                <div class="balance__metrics-value">999</div>
+                <div class="balance__metrics-right">
+                  <div class="balance__metrics-text">USDT</div>
+                  <div class="balance__metrics__subtext"></div>
+                </div>
+              </div>
+            </div>
+            <div class="balance__metrics-wrapper balance__rate-wrapper">
+              <div class="balance__rate-left">
+                <p>1</p>
+                <span>$IBET Token</span>
+              </div>
+              <span class="balance__rate-equal">=</span>
+              <div class="balance__rate-right">
+                <p>3.38</p>
+                <span>USDT</span>
+              </div>
+              <div class="balance__rate-stage">
+                <span>Stage#2</span>
+                <p>10%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  @@include('html/layout/script.html')
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+.purchase__wrapper {
+  padding-top: 48px;
+  max-width: 536px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+
+.purchase__info {
+  margin-bottom: 32px;
+  padding: 24px;
+  border-radius: 24px;
+  background: $blockBackground;
+}
+
+.purchase__block {
+  padding: 16px;
+  border-radius: 16px;
+  background: $white15Color;
+}
+
+.purchase__block + .purchase__block {
+  margin-top: 22px;
+}
+
+.purchase__block-title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: $white50Color;
+}
+
+.purchase__block-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 40px;
+}
+
+.purchase__block-value {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.purchase__block-selects {
+  display: flex;
+  gap: 16px;
+}
+
+.purchase__quantity-select {
+}
+
+.purchase__block-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.purchase__block-minimum {
+  font-size: 18px;
+  color: $white50Color;
+  font-weight: 400;
+}
+
+.purchase__block-balance {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.purchase__block-badge {
+  padding: 8px;
+  border-radius: 40px;
+  background: $white15Color;
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+
+  span {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.purchase__get-icon {
+  margin-right: 12px;
+}
+
+.purchase__bonus-icon {
+  margin-left: 12px;
+}
+
+.purchase__summary {
+  padding: 24px;
+  border-radius: 24px;
+  background: $blockBackground;
+}
+
+.purchase__summary-title {
+  font-size: 20px;
+  color: $white50Color;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.purchase__summary-amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  span {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+
+    img {
+      margin-left: 12px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+}
+
+.purchase__summary-amount + .purchase__summary-amount {
+  margin-top: 17px;
+}
+
+.purchase__summary-tokens {
+  margin-top: 25px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.purchase__summary-value {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 54px;
+  margin-right: 12px;
+}
+
+.purchase__summary-right {
+  p {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 3px;
+  }
+
+  span {
+    font-size: 20px;
+    color: $white50Color;
+    font-weight: 300;
+  }
+}
+
+.purchase-btn {
+  margin-top: 24px;
+}
