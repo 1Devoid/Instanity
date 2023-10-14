@@ -1,0 +1,187 @@
+.profile {
+  padding-top: 49px;
+}
+
+.profile__wrapper {
+  display: grid;
+  grid-template-columns: minmax(460px, 1fr) 344px;
+  gap: 40px;
+}
+
+.profile__left-block {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.profile__block {
+  padding: 24px;
+  border-radius: 24px;
+  background: $blockBackground;
+}
+
+.profile__block-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+  margin-bottom: 24px;
+}
+
+.profile__block-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.profile__block-input {
+  width: 100%;
+}
+
+.profile__input-group {
+  display: flex;
+  gap: 16px;
+}
+
+.profile__half-field {
+  width: 49%;
+}
+
+.profile__select-field {
+  position: relative;
+  width: 49%;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    width: 24px;
+    height: 20px;
+    background-image: url('../images/icons/chevron50.svg');
+    background-repeat: no-repeat;
+  }
+}
+
+.profile__block-select {
+  outline: none;
+  color: $white50Color;
+  width: 100%;
+  appearance: none;
+  cursor: pointer;
+
+  option {
+    background: $purpleLightColor;
+    color: $whiteColor;
+  }
+}
+
+.profile__authorization-field {
+  position: relative;
+  width: 100%;
+
+  .profile__authorization-input {
+    padding: 11px 70px 11px 11px;
+  }
+}
+
+.profile__authorization-input {
+  width: 100%;
+}
+
+.profile__authorization-show {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.profile__authorization-btn {
+  max-height: 44px;
+  line-height: 10px;
+}
+
+.profile__right-block {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.profile__btn-enable {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  width: 100%;
+  font-size: 16px;
+  color: $blackColor;
+  font-weight: 600;
+  line-height: 10px;
+  text-transform: uppercase;
+  border-radius: 56px;
+  background: $whiteColor;
+  border: none;
+  transition: 0.3s all;
+
+  &:hover {
+    color: $whiteColor;
+    background: $purpleLightColor;
+  }
+
+  &:active {
+    color: $whiteColor;
+    background: $purpleDarkColor;
+  }
+}
+
+.profile__btn-change {
+  width: 100%;
+  max-height: 44px;
+  line-height: 10px;
+  margin-bottom: 16px;
+}
+
+.profile__btn-remove {
+  width: 100%;
+  max-height: 44px;
+  padding: 16px;
+  font-size: 16px;
+  color: $whiteColor;
+  font-weight: 600;
+  line-height: 10px;
+  text-transform: uppercase;
+  border-radius: 56px;
+  background: transparent;
+  border: none;
+  transition: 0.3s all;
+
+  &:hover {
+    color: $purpleLightColor;
+  }
+
+  &:active {
+    color: $purpleDarkColor;
+  }
+}
+
+.profile__btn-save {
+  margin-top: -8px;
+}
+
+.profile__control-btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: -8px;
+}
+
+.profile__cancel-btn,
+.profile__save-btn {
+  width: 100%;
+  max-height: 44px;
+  max-width: 164px;
+  text-align: center;
+  line-height: 10px;
+}

@@ -26,6 +26,7 @@
 }
 
 .main {
+  position: relative;
   grid-column-start: 2;
   grid-column-end: 3;
 }
@@ -34,6 +35,7 @@
   display: block;
   padding: 16px;
   border-radius: 56px;
+  border: none;
   background: $accentColor;
   font-size: 16px;
   color: $whiteColor;
@@ -41,6 +43,7 @@
   font-weight: 600;
   text-align: center;
   transition: 0.3s all;
+  text-align: center;
 
   &:hover {
     background: $purpleLightColor;
@@ -51,15 +54,89 @@
   }
 }
 
-.button--alternative {
+.button-white {
+  display: block;
+  padding: 16px;
+  background: transparent;
+  border-radius: 56px;
+  border: 1px solid $whiteColor;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $whiteColor;
+  transition: 0.3s all;
+  text-align: center;
+
   &:hover {
+    color: $purpleLightColor;
+    border: 1px solid $purpleLightColor;
   }
 
   &:active {
+    color: $purpleDarkColor;
+    border: 1px solid $purpleDarkColor;
+  }
+}
+
+.button-purple {
+  display: block;
+  padding: 16px;
+  background: transparent;
+  color: $whiteColor;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 56px;
+  border: 1px solid $accentColor;
+  transition: 0.3s all;
+  text-align: center;
+
+  &:hover {
+    color: $purpleLightColor;
+    border: 1px solid $purpleLightColor;
+  }
+
+  &:active {
+    color: $purpleDarkColor;
+    border: 1px solid $purpleDarkColor;
   }
 }
 
 *::selection {
   color: $blackColor;
   background: $accentColor;
+}
+
+.form-input {
+  padding: 11px 12px;
+  border-radius: 40px;
+  border: 1px solid $white50Color;
+  background: transparent;
+  font-size: 16px;
+  color: $whiteColor;
+  font-weight: 400;
+  line-height: 150%;
+  transition: 0.3s all;
+  width: 100%;
+
+  &::placeholder {
+    font-size: 16px;
+    color: $white50Color;
+    font-weight: 400;
+    line-height: 150%;
+    transition: 0.3s all;
+  }
+
+  &:hover {
+    border: 1px solid $whiteColor;
+    &::placeholder {
+      color: $whiteColor;
+    }
+  }
+  &:active {
+    border: 1px solid $white50Color;
+    &::placeholder {
+      color: $whiteColor;
+    }
+  }
 }
