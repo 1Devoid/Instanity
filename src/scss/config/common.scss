@@ -25,6 +25,22 @@
   grid-template-columns: 256px 10fr;
 }
 
+.wrapper-flex {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+
+  main {
+    position: relative;
+    flex: 1 0 auto;
+  }
+
+  footer {
+    flex: 0 0 auto;
+  }
+}
+
 .main {
   position: relative;
   grid-column-start: 2;
@@ -129,12 +145,15 @@
 
   &:hover {
     border: 1px solid $whiteColor;
+
     &::placeholder {
       color: $whiteColor;
     }
   }
+
   &:active {
     border: 1px solid $white50Color;
+
     &::placeholder {
       color: $whiteColor;
     }

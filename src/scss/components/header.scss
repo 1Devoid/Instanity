@@ -1,2 +1,19 @@
 .header {
+  padding-top: 48px;
+  margin-bottom: 40px;
+}
+
+.header__logo {
+  margin-bottom: 24px;
+}
+
+.header__banner {
+  margin-bottom: 16px;
+  min-width: 1920px;
+  width: 100%;
+}
+
+.header__text {
+  font-size: 20px;
+  font-weight: 400;
 }

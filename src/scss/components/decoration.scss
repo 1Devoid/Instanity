@@ -11,6 +11,14 @@
   left: -110px;
   transform: scale(1.5);
   z-index: -1;
+
+  &.--sign-up {
+    top: 15%;
+    left: unset;
+    right: 24%;
+    transform: scale(2);
+    z-index: -2;
+  }
 }
 
 .decoration-overlay {
@@ -22,14 +30,33 @@
   border-radius: 1601px;
   background: $accentColor;
   filter: blur(450px);
-  z-index: -2;
+  z-index: -3;
+
+  &.--sign-up {
+    bottom: -110%;
+    right: 0%;
+  }
 }
+
+.decoration-overlay-2 {
+  position: absolute;
+  bottom: -30%;
+  right: -30%;
+  width: 871px;
+  height: 871px;
+  background: $accentColor;
+  border-radius: 871px;
+  filter: blur(310px);
+  z-index: -1;
+}
+
 .decoration-chips {
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: -1;
 }
+
 .decoration-ibet {
   position: absolute;
   top: 145px;
