@@ -40,18 +40,20 @@
   font-size: 24px;
   font-weight: 400;
   margin-right: 15px;
+
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
     -webkit-appearance: none;
   }
+
   input {
-    max-width: 70px;
+    max-width: 120px;
     background: transparent;
     border: none;
     color: $whiteColor;
-    border-bottom: 1px solid $white50Color;
+
     &::placeholder {
-      color: $white50Color;
+      color: $whiteColor;
     }
   }
 }
