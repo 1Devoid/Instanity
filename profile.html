@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="static/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css?_v=20231016093419">
+  <title>Insanity - Profile</title>
+</head>
+
+<body class="body">
+  <div class="wrapper">
+    <aside class="menu">
+      <div class="menu__wrapper">
+        <img class="menu__logo" src="images/icons/logo.svg" alt="Logo.">
+        <nav class="menu__nav">
+          <a class="menu__link" href="index.html">
+            <img class="menu__link-icon" src="images/icons/qr-icon.svg" alt="Dashboard.">
+            <div class="menu__link-text">Dashboard</div>
+          </a>
+          <a class="menu__link --special" href="buy-bet.html">
+            <img class="menu__link-icon" src="images/icons/dollar-icon.svg" alt="Buy.">
+            <div class="menu__link-text">Buy $IBET</div>
+          </a>
+          <a class="menu__link" href="transactions.html">
+            <img class="menu__link-icon" src="images/icons/transaction-icon.svg" alt="Transactions.">
+            <div class="menu__link-text">Transactions</div>
+          </a>
+          <a class="menu__link --active" href="profile.html">
+            <img class="menu__link-icon" src="images/icons/profile-icon.svg" alt="Profile.">
+            <div class="menu__link-text">Profile</div>
+          </a>
+        </nav>
+        <nav class="menu__nav-bottom">
+          <a class="menu__link-bottom" href="#">
+            <img class="menu__link-icon-bottom" src="images/icons/home.svg" alt="Home.">
+            <div class="menu__link-text-bottom">Home</div>
+          </a>
+          <a class="menu__link-bottom" href="#">
+            <img class="menu__link-icon-bottom" src="images/icons/whitepaper.svg" alt="Whitepaper.">
+            <div class="menu__link-text-bottom">Whitepaper</div>
+          </a>
+          <a class="menu__link-bottom" href="#">
+            <img class="menu__link-icon-bottom" src="images/icons/tg.svg" alt="Telegram.">
+            <div class="menu__link-text-bottom">Telegram</div>
+          </a>
+        </nav>
+      </div>
+    </aside>
+    <main class="main">
+      <section class="profile">
+        <div class="container">
+          <div class="profile__wrapper">
+            <div class="profile__left-block">
+              <div class="profile__block">
+                <h2 class="profile__block-title">Profile</h2>
+                <div class="profile__block-inner">
+                  <div class="profile__input-group">
+                    <input class="form-input profile__block-input" type="text" name="firstName" id="firstName" placeholder="First Name">
+                    <input class="form-input profile__block-input" type="text" name="lastName" id="lastName" placeholder="Last Name">
+                  </div>
+                  <div class="profile__select-field">
+                    <select class="form-input profile__block-select" name="country" id="country">
+                      <option value="#" selected="selected" disabled="disabled">Country</option>
+                      <option value="#">Country2</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="profile__block">
+                <h2 class="profile__block-title">Authorization Data</h2>
+                <div class="profile__block-inner">
+                  <div class="profile__input-group">
+                    <div class="profile__authorization-field">
+                      <input class="form-input profile__authorization-input" type="password" name="password" id="password" placeholder="Password">
+                      <div class="profile__authorization-show" id="show-password">Show</div>
+                    </div>
+                    <a class="button-white profile__authorization-btn" href="profile-change-password.html">Change</a>
+                  </div>
+                  <div class="profile__input-group">
+                    <input class="form-input profile__authorization-input" type="email" name="email" id="email" placeholder="email@email.com">
+                    <a class="button-white profile__authorization-btn" href="profile-change-email.html">Change</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profile__right-block">
+              <div class="profile__block">
+                <h2 class="profile__block-title">Enable 2FA ( Google Authenticator )</h2>
+                
+                <a class="profile__btn-enable" href="profile-with2fa.html">Enable</a>
+                
+                
+                
+                
+              </div>
+              <div class="profile__block">
+                <h2 class="profile__block-title">Enter Wallet Address</h2>
+                <input class="form-input" type="text" name="wallet" id="wallet" placeholder="0xbc...xyz">
+              </div>
+              <button class="button profile__btn-save" type="button">Save</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <picture><source srcset="images/chip.webp, images/chip@2x.webp 2x" type="image/webp"><img class="decoration" src="images/chip.png" srcset="images/chip@2x.png 2x" alt="Decoration chip."></picture>
+      <picture><source srcset="images/cubes.webp, images/cubes@2x.webp 2x" type="image/webp"><img class="decoration-cubes" src="images/cubes.png" srcset="images/cubes@2x.png 2x" alt="Decoration cubes."></picture>
+      <div class="decoration-overlay"></div>
+    </main>
+  </div>
+
+  <script src="js/app.min.js?_v=20231016093419"></script>
+</body>
+
+</html>
