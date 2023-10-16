@@ -119,9 +119,24 @@
   }
 }
 
-.auth__form-sign-up {
+.auth__form-forgot {
+  position: relative;
   margin-top: 8px;
   text-align: right;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -70px;
+    right: 0;
+    background: $blackColor;
+    width: 231px;
+    height: 211px;
+    filter: blur(74px);
+    opacity: 0.5;
+    z-index: -1;
+  }
 
   a {
     color: $purpleLightColor;

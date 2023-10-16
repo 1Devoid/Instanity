@@ -55,11 +55,25 @@
                     <input class="profile__block-input form-input" type="text" name="lastName" id="lastName"
                       placeholder="Last Name">
                   </div>
-                  <div class="profile__select-field">
-                    <select class="profile__block-select form-input" name="country" id="country">
-                      <option value="#" selected disabled>Country</option>
-                      <option value="#">Country2</option>
-                    </select>
+                  <div class="profile__select-field dropdown-container">
+                    <div class="selected-menu" id="dropdown-1">
+                      <p>Country</p>
+                      <img class="selected-menu-chevron" src="images/icons/chevron50.svg" alt="Arrow.">
+                    </div>
+                    <ul class="menu-items" id="menu-items-1">
+                      <li class="active">
+                        <span>
+                          <img src="images/britain-wave.svg" alt="Wave.">
+                          <span class="item-text">United Kingdom</span>
+                        </span>
+                      </li>
+                      <li>
+                        <span>
+                          <img src="images/usa-wave.svg" alt="Wave.">
+                          <span class="item-text">United States</span>
+                        </span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>

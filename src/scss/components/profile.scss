@@ -47,19 +47,72 @@
 }
 
 .profile__select-field {
-  position: relative;
-  width: 49%;
+  max-width: 49%;
 
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 14px;
-    right: 16px;
-    width: 24px;
-    height: 20px;
-    background-image: url('../images/icons/chevron50.svg');
-    background-repeat: no-repeat;
+  .selected-menu {
+    justify-content: space-between;
+    padding: 11px 12px;
+    border-radius: 40px;
+    border: 1px solid $white50Color;
+    background: transparent;
+    font-size: 16px;
+    color: $white50Color;
+    font-weight: 400;
+    line-height: 150%;
+    transition: 0.3s all;
+    width: 100%;
+
+    &::placeholder {
+      font-size: 16px;
+      color: $white50Color;
+      font-weight: 400;
+      line-height: 150%;
+      transition: 0.3s all;
+    }
+
+    &:hover {
+      border: 1px solid $whiteColor;
+
+      &::placeholder {
+        color: $whiteColor;
+      }
+    }
+
+    &:active {
+      border: 1px solid $white50Color;
+
+      &::placeholder {
+        color: $whiteColor;
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .selected-menu.active {
+    border-radius: 24px 24px 0 0;
+  }
+
+  .menu-items {
+    li {
+      transition: 0.3s all;
+      background: $purpleDarkColor;
+
+      &:hover {
+        background: $purpleLightColor;
+      }
+
+      &:last-child {
+        border-radius: 0 0 14px 14px;
+      }
+
+      img {
+        width: 24px;
+        height: 20px;
+      }
+    }
   }
 }
 
