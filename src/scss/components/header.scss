@@ -7,13 +7,35 @@
   margin-bottom: 24px;
 }
 
+.header__text {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.header__banner-wrapper {
+  display: flex;
+  gap: 25px;
+}
+
 .header__banner {
   margin-bottom: 16px;
   min-width: 1920px;
   width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation-name: slide;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transition: 0.2s all;
 }
 
-.header__text {
-  font-size: 20px;
-  font-weight: 400;
+@keyframes slide {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-200%, 0);
+  }
 }
