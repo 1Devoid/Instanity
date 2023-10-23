@@ -40,6 +40,7 @@
   padding-left: 0;
   border-bottom-right-radius: 16px;
   border-bottom-left-radius: 16px;
+  overflow: hidden;
 }
 
 .dropdown-container .menu-items.active {
@@ -50,8 +51,12 @@
 
 .dropdown-container .menu-items li {
   width: 100%;
-  padding: 6px 12px;
+  padding: 15px 12px;
   cursor: pointer;
+  transition: 0.3s all;
+  &:hover {
+    background-color: $purpleDarkColor;
+  }
 }
 
 .dropdown-container .menu-items li span {
