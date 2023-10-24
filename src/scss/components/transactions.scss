@@ -3,21 +3,19 @@
   margin-bottom: 139px;
 
   *::-webkit-scrollbar {
-    width: 16px;
-  }
-
-  *::-webkit-scrollbar-track {
     background: transparent;
   }
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 3px solid #ffffff;
+  *::-webkit-scrollbar:horizontal {
+    height: 1em;
   }
-}
 
-.transactions__wrapper {
+  *::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 99999px;
+    border: 0.3125em solid transparent;
+    background-clip: content-box;
+  }
 }
 
 .transactions__header {
@@ -58,10 +56,10 @@
   width: 100%;
 
   @include laptop {
+    border-radius: 10px;
     padding: 16px;
     margin: 0 auto;
     max-width: 700px;
-    // overflow: hidden;
     overflow-x: scroll;
   }
 
@@ -70,7 +68,7 @@
   }
 
   @include tablet {
-    border-radius: 24px 0 0 24px;
+    border-radius: 10px 0 0 10px;
     max-width: 100%;
     position: absolute;
     transform: translateX(-20px);
