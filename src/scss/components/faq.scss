@@ -1,9 +1,15 @@
 .faq {
   padding-top: 32px;
+  @include laptop {
+    padding-top: 40px;
+  }
 }
 
 .faq__title {
   margin-bottom: 32px;
   font-size: 20px;
   font-weight: 600;
+  @include laptop {
+    margin-bottom: 24px;
+  }
 }

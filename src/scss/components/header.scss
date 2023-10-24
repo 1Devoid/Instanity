@@ -5,11 +5,17 @@
 
 .header__logo {
   margin-bottom: 24px;
+  @include tablet {
+    margin: 0 auto 24px;
+  }
 }
 
 .header__text {
   font-size: 20px;
   font-weight: 400;
+  @include tablet {
+    text-align: center;
+  }
 }
 
 .header__banner-wrapper {

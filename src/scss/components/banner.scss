@@ -5,19 +5,58 @@
   border-radius: 24px;
   background: rgba(255, 255, 255, 0.15);
   margin-top: 116px;
+
+  @include laptop {
+    padding: 24px 18px;
+    min-width: 304px;
+    max-width: 536px;
+    margin: 280px auto 56px;
+  }
+
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
+
+.banner--transaction {
+  @include laptop {
+    margin: 300px auto 56px;
+  }
+
+  @include tablet {
+    margin: 330px auto 0;
+  }
+}
+
 .banner__title {
   margin-bottom: 16px;
   font-size: 24px;
   font-weight: 600;
   text-transform: uppercase;
+
+  @include laptop {
+    font-size: 20px;
+  }
 }
+
 .banner__subtitle {
   font-size: 20px;
   font-weight: 400;
+
+  @include laptop {
+    font-size: 18px;
+  }
 }
+
 .banner__img {
   position: absolute;
   top: -108px;
   right: 0;
+
+  @include laptop {
+    top: -233px;
+    right: 50%;
+    translate: 50%;
+    max-width: 290px;
+  }
 }

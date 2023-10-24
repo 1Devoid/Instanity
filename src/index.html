@@ -4,6 +4,7 @@
 
 <body class="body">
   <div class="wrapper">
+    @@include('html/components/header-mobile.html')
     <aside class="menu">
       <div class="menu__wrapper">
         <img class="menu__logo" src="images/icons/logo.svg" alt="Logo.">
@@ -42,7 +43,7 @@
       </div>
     </aside>
     <main class="main">
-      <div class="container">
+      <div class="container home-wrapper">
         <div class="banner">
           <div class="banner__title">BUY $IBET NOW AND REAP REWARDS LATER</div>
           <div class="banner__subtitle">
@@ -119,6 +120,7 @@
         </div>
       </div>
     </main>
+    @@include('html/components/footer-mobile.html')
   </div>
 
   @@include('html/layout/script.html')

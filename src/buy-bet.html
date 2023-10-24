@@ -4,6 +4,7 @@
 
 <body class="body">
   <div class="wrapper">
+    @@include('html/components/header-mobile.html')
     <aside class="menu">
       <div class="menu__wrapper">
         <img class="menu__logo" src="images/icons/logo.svg" alt="Logo.">
@@ -48,10 +49,11 @@
             <div class="purchase__info">
               <div class="purchase__block">
                 <h2 class="purchase__block-title">How Much Would You Like To Buy?</h2>
-                <div class="purchase__block-wrapper">
+                <div class="purchase__block-wrapper --top">
                   <div class="purchase__block-value">
                     <input type="number" name="usdt" id="usdt" placeholder="100 USDT" />
                   </div>
+                  <div class="purchase__block-min-top">Minimum amount 30 USDT</div>
                   <div class="purchase__block-selects">
                     <div class="dropdown-container">
                       <div class="selected-menu" id="dropdown-1">
@@ -171,6 +173,7 @@
         </div>
       </section>
     </main>
+    @@include('html/components/footer-mobile.html')
   </div>
 
   @@include('html/layout/script.html')

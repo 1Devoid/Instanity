@@ -3,16 +3,24 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include tablet {
+    flex-direction: column;
+    padding: 56px 0 24px;
+  }
 }
 
 .footer__logo {
   margin-right: 15px;
+  @include tablet {
+    margin-bottom: 32px;
+    margin-right: 0;
+  }
 }
 
 .footer__link {
   font-size: 16px;
   color: $whiteColor;
-  color: 500;
+  font-weight: 500;
   transition: 0.3s all;
 
   &:hover {

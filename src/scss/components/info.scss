@@ -6,9 +6,18 @@
   display: grid;
   grid-template-columns: minmax(460px, 1fr) 344px;
   gap: 40px;
+
+  @include laptop {
+    justify-items: center;
+    grid-template-columns: minmax(304px, 1fr);
+    gap: 32px;
+  }
 }
 
 .info__left-block {
+  @include laptop {
+    width: 100%;
+  }
 }
 
 .info__back {
@@ -19,6 +28,10 @@
   font-weight: 600;
   line-height: 100%;
   margin-bottom: 40px;
+
+  @include laptop {
+    margin-bottom: 24px;
+  }
 
   img {
     margin-right: 12px;
@@ -44,15 +57,30 @@
   font-weight: 300;
   color: $white50Color;
   margin-bottom: 12px;
+
+  @include laptop {
+    margin-bottom: 16px;
+  }
 }
 
 .info__block-text {
   font-size: 20px;
   font-weight: 600;
+
+  @include laptop {
+    font-size: 16px;
+  }
+}
+
+.info__block-text.--id {
+  @include laptop {
+    font-size: 18px;
+  }
 }
 
 .info__block-copy {
   min-width: 120px;
+  margin-left: 15px;
 }
 
 .info__quantity {
@@ -67,6 +95,9 @@
 }
 
 .info__right-block {
+  @include laptop {
+    width: 100%;
+  }
 }
 
 .info__header {
@@ -97,6 +128,11 @@
   flex-direction: column;
   align-items: center;
   padding: 24px;
+
+  @include laptop {
+    max-width: 335px;
+    margin: 0 auto;
+  }
 }
 
 .info__qr-title {

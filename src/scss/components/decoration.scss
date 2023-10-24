@@ -3,6 +3,19 @@
   bottom: 0;
   right: 0;
   z-index: -1;
+
+  @include laptop {
+    display: none;
+  }
+
+  &.--change-password {
+    @include tablet {
+      display: block;
+      bottom: -250px;
+      right: 5%;
+      width: 276px;
+    }
+  }
 }
 
 .decoration-cubes {
@@ -12,12 +25,21 @@
   transform: scale(1.5);
   z-index: -1;
 
+  @include laptop {
+    display: none;
+  }
+
   &.--sign-up {
     top: 15%;
     left: unset;
     right: 24%;
     transform: scale(2);
     z-index: -2;
+
+    @include laptop {
+      display: block;
+      right: -35%;
+    }
   }
 }
 
@@ -31,6 +53,10 @@
   background: $accentColor;
   filter: blur(450px);
   z-index: -3;
+
+  @include laptop {
+    display: none;
+  }
 
   &.--sign-up {
     bottom: -110%;
@@ -55,6 +81,17 @@
   bottom: 0;
   right: 0;
   z-index: -1;
+
+  @include laptop {
+    display: none;
+  }
+
+  @include tablet {
+    display: block;
+    bottom: -300px;
+    right: -15%;
+    width: 500px;
+  }
 }
 
 .decoration-ibet {
@@ -62,4 +99,15 @@
   top: 145px;
   left: -82px;
   z-index: 0;
+
+  @include laptop {
+    display: none;
+  }
+
+  @include tablet {
+    display: block;
+    top: 0px;
+    left: 73%;
+    width: 210px;
+  }
 }

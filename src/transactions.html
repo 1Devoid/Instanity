@@ -4,6 +4,7 @@
 
 <body class="body">
   <div class="wrapper">
+    @@include('html/components/header-mobile.html')
     <aside class="menu">
       <div class="menu__wrapper">
         <img class="menu__logo" src="images/icons/logo.svg" alt="Logo.">
@@ -104,7 +105,9 @@
             </table>
           </div>
         </section>
-        <div class="banner">
+      </div>
+      <div class="container">
+        <div class="banner banner--transaction">
           <div class="banner__title">BUY $IBET NOW AND REAP REWARDS LATER</div>
           <div class="banner__subtitle">
             Pre-sale has started. Get involved now to get access to insane prices on $IBET
@@ -113,6 +116,7 @@
         </div>
       </div>
     </main>
+    @@include('html/components/footer-mobile.html')
   </div>
 
   @@include('html/layout/script.html')

@@ -1,6 +1,20 @@
 .transactions {
   margin-top: 48px;
   margin-bottom: 139px;
+
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
 }
 
 .transactions__wrapper {
@@ -17,6 +31,10 @@
   font-size: 24px;
   font-weight: 600;
   line-height: 100%;
+
+  @include tablet {
+    margin-bottom: 330px;
+  }
 }
 
 .transactions__filter {
@@ -38,6 +56,30 @@
   background: $blockBackground;
   width: 100%;
   width: 100%;
+
+  @include laptop {
+    padding: 16px;
+    margin: 0 auto;
+    max-width: 700px;
+    // overflow: hidden;
+    overflow-x: scroll;
+  }
+
+  @media (max-width: 1024px) {
+    max-width: 506px;
+  }
+
+  @include tablet {
+    border-radius: 24px 0 0 24px;
+    max-width: 100%;
+    position: absolute;
+    transform: translateX(-20px);
+    top: 132px;
+  }
+
+  @include mobile {
+    transform: translateX(-10px);
+  }
 }
 
 .transactions__table tbody {
@@ -51,6 +93,10 @@
   display: flex;
   justify-content: space-between;
   gap: 15px;
+
+  @include laptop {
+    width: 1105px;
+  }
 
   &:last-child {
     border-bottom: none;
@@ -70,7 +116,6 @@
 
 .transactions__table tbody tr th {
   font-family: $fontFamily;
-
   display: flex;
   flex-direction: row-reverse;
   justify-content: start;
@@ -78,6 +123,10 @@
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 26px;
+
+  @include laptop {
+    font-size: 14px;
+  }
 
   img {
     cursor: pointer;

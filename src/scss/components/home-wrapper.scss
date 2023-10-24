@@ -1,0 +1,6 @@
+.home-wrapper {
+  @include laptop {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

@@ -1,0 +1,20 @@
+.header-mobile {
+  display: none;
+  min-height: 40px;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.header-mobile__wrapper {
+  padding-top: 37px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-mobile__logo {
+  max-width: 160px;
+}
