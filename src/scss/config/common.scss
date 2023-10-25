@@ -11,6 +11,10 @@
   background: $accentBackground;
   background-attachment: fixed;
   // font-variant-numeric: lining-nums;
+
+  &.no-scroll {
+    overflow-y: hidden;
+  }
 }
 
 .wrapper {
@@ -47,6 +51,8 @@
   @include tablet {
     grid-column-start: 1;
     grid-column-end: 2;
+    // For fixed position header
+    // padding-top: 86px;
   }
 }
 

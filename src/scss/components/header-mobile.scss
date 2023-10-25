@@ -2,6 +2,11 @@
   display: none;
   min-height: 40px;
 
+  // For fixed position
+  // position: fixed;
+  // width: 100%;
+  // z-index: 2;
+  // background: linear-gradient(10deg, #13071b -0.8%, #8b38d1 246.51%);
   @include tablet {
     display: block;
   }
@@ -9,7 +14,7 @@
 
 .header-mobile__wrapper {
   padding-top: 37px;
-  padding-bottom: 10px;
+  padding-bottom: 37px;
   display: flex;
   justify-content: space-between;
   align-items: center;
