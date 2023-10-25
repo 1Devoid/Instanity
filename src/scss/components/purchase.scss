@@ -3,6 +3,7 @@
   max-width: 536px;
   margin: 0 auto;
   margin-bottom: 48px;
+
   @include tablet {
     margin-bottom: 0;
   }
@@ -13,6 +14,7 @@
   padding: 24px;
   border-radius: 24px;
   background: $blockBackground;
+
   @include laptop {
     padding: 16px;
   }
@@ -26,6 +28,7 @@
 
 .purchase__block + .purchase__block {
   margin-top: 22px;
+
   @include laptop {
     margin-top: 16px;
   }
@@ -36,6 +39,7 @@
   font-weight: 400;
   margin-bottom: 16px;
   color: $white50Color;
+
   @include laptop {
     font-size: 16px;
   }
@@ -47,6 +51,7 @@
   align-items: center;
   min-height: 40px;
 }
+
 .purchase__block-wrapper.--top {
   @include laptop {
     flex-direction: column;
@@ -58,22 +63,33 @@
   font-size: 24px;
   font-weight: 400;
   margin-right: 15px;
+
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
     -webkit-appearance: none;
   }
+
   @include laptop {
     font-size: 20px;
   }
+
   input {
     max-width: 120px;
     background: transparent;
     border: none;
+    border-bottom: 1px solid $white15Color;
     color: $whiteColor;
+    line-height: 25px;
+    padding-bottom: 12px;
+
+    @include laptop {
+      padding-bottom: 6px;
+    }
 
     &::placeholder {
-      color: $whiteColor;
+      color: $white50Color;
     }
+
     &:focus {
       border-bottom: 1px solid $whiteColor;
     }
@@ -86,6 +102,7 @@
   color: $white50Color;
   font-weight: 400;
   margin: 8px 0 16px;
+
   @include laptop {
     display: block;
   }
@@ -94,6 +111,7 @@
 .purchase__block-selects {
   display: flex;
   gap: 16px;
+
   @include laptop {
     align-self: center;
   }
@@ -104,6 +122,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 24px;
+
   @include laptop {
     justify-content: flex-end;
   }
@@ -113,6 +132,7 @@
   font-size: 18px;
   color: $white50Color;
   font-weight: 400;
+
   @include laptop {
     display: none;
   }
@@ -121,6 +141,7 @@
 .purchase__block-balance {
   font-size: 18px;
   font-weight: 400;
+
   @include laptop {
     font-size: 16px;
   }
@@ -152,6 +173,7 @@
   padding: 24px;
   border-radius: 24px;
   background: $blockBackground;
+
   @include laptop {
     padding: 16px;
   }
@@ -162,6 +184,7 @@
   color: $white50Color;
   font-weight: 400;
   margin-bottom: 24px;
+
   @include laptop {
     font-size: 16px;
   }
@@ -187,6 +210,7 @@
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 0;
+
     @include laptop {
       font-size: 20px;
     }
@@ -209,6 +233,7 @@
   font-weight: 600;
   line-height: 54px;
   margin-right: 12px;
+
   @include laptop {
     font-size: 48px;
   }
@@ -219,6 +244,7 @@
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 3px;
+
     @include laptop {
       font-size: 20px;
     }
@@ -228,6 +254,7 @@
     font-size: 20px;
     color: $white50Color;
     font-weight: 300;
+
     @include laptop {
       font-size: 16px;
     }

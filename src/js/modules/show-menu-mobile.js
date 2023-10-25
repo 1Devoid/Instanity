@@ -13,6 +13,10 @@ function showMenuMobile() {
       menuMobile.classList.remove('show');
       body.classList.remove('no-scroll');
     });
+    menuClose.addEventListener('touchend', () => {
+      menuMobile.classList.remove('show');
+      body.classList.remove('no-scroll');
+    });
   }
 }
 

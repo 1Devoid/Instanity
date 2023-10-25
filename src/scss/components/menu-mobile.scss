@@ -39,13 +39,25 @@
 }
 
 .menu-mobile__close {
+  position: relative;
   cursor: pointer;
-  width: 80px;
-  height: 8px;
-  border-radius: 8px;
-  background: $whiteColor;
+  width: 335px;
+  height: 32px;
+  background: transparent;
   margin: 0 auto;
-  margin-bottom: 24px;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: $whiteColor;
+    border-radius: 8px;
+    width: 80px;
+    height: 8px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .menu-mobile__inner {
