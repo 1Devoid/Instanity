@@ -16,6 +16,10 @@
   &.show {
     display: block;
   }
+
+  &.hide {
+    animation: hide 0.5s linear 0.1s 1 both;
+  }
 }
 
 .menu-mobile__content {
@@ -27,6 +31,22 @@
   border-radius: 32px 32px 0px 0px;
   width: 100%;
   max-width: 375px;
+}
+
+@keyframes hide {
+  0% {
+    background: #0000007c;
+    bottom: 0;
+  }
+
+  90% {
+    background: transparent;
+    bottom: -100%;
+  }
+
+  100% {
+    display: none;
+  }
 }
 
 .menu-mobile__wrapper {

@@ -9,12 +9,19 @@ function showMenuMobile() {
       menuMobile.classList.add('show');
       body.classList.add('no-scroll');
     });
+
     menuClose.addEventListener('click', () => {
       menuMobile.classList.remove('show');
       body.classList.remove('no-scroll');
     });
+
     menuClose.addEventListener('touchend', () => {
-      menuMobile.classList.remove('show');
+      menuMobile.classList.add('hide');
+
+      setTimeout(() => {
+        menuMobile.classList.remove('hide');
+        menuMobile.classList.remove('show');
+      }, 500);
       body.classList.remove('no-scroll');
     });
   }
